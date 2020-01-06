@@ -1,0 +1,39 @@
+{
+  "name": "drum-kit",
+  "version": "1.0.0",
+  "description": "Application for playing and recording drum parts",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "npm run build-dev && nodemon main.js",
+    "build-dev": "webpack --mode=\"development\"",
+    "build": "npm run build-sounds && webpack --mode=\"production\"",
+    "build-sounds": "node ./.tools/wavToJson.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirMerk/drum-kit.git"
+  },
+  "author": "VMerk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirMerk/drum-kit/issues"
+  },
+  "homepage": "https://github.com/VladimirMerk/drum-kit#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
+    "nodemon": "^2.0.2",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1"
+  }
+}

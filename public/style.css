@@ -1,0 +1,110 @@
+.example {
+  /* Позиционирование */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Блочная модель */
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+
+  /* Типографика */
+  font: normal 13px/1.5 "Arial", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #333333;
+
+  /* Оформление */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  opacity: 1;
+
+  /* Анимация */
+  transition: color 1s;
+
+  /* Разное */
+  will-change: auto;
+}
+
+body {
+  background-image: url("./images/drum.jpg");
+  background-image: repeating-radial-gradient(to bottom right, #dbe0f2, #dbe0f2 1px, #fff 1px, #fff 100%);
+  background-size: 3px 3px;
+  font-family: Courier, serif;
+  font-size: 14px;
+  padding: 10px;
+}
+header {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+header #title {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #6255ac;
+    text-shadow: 1px 1px #fff;
+    line-height: 24px;
+}
+.row-pad {
+    display: flex;
+}
+
+.row-pad .item-pad {
+    width: 80px;
+    height: 80px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+    background-color: #e3e3e3;
+    cursor: pointer;
+}
+
+.row-pad:first-child .item-pad:nth-child(1) {
+  background-color: #bdbffd;
+}
+.row-pad:first-child .item-pad:nth-child(2) {
+  background-color: #bcbcfc;
+}
+.row-pad:first-child .item-pad:nth-child(3) {
+  background-color: #bbb5fb;
+}
+.row-pad:first-child .item-pad:nth-child(4) {
+  background-color: #b9aef9;
+}
+.row-pad:first-child .item-pad:nth-child(5) {
+  background-color: #b8a7f8;
+}
+.row-pad:first-child .item-pad:nth-child(6) {
+  background-color: #b69ff6;
+}
+.row-pad:first-child .item-pad:nth-child(7) {
+  background-color: #b598f4;
+}
+.row-pad:first-child .item-pad:nth-child(8) {
+  background-color: #b38ff2;
+}
+.row-pad:first-child .item-pad:nth-child(9) {
+  background-color: #b188f1;
+}
+.row-pad:first-child .item-pad:nth-child(10) {
+  background-color: #af81ef;
+}
+.row-pad:first-child .item-pad:nth-child(11) {
+  background-color: #ae7cee;
+}
+.row-pad:first-child .item-pad:nth-child(12) {
+  background-color: #ad76ed;
+}
